@@ -5,18 +5,20 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.fondo {
+  background-image: linear-gradient(to top, #078fb4 0%, #1f437d 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  opacity: 0.88;
+}
+
 .webp .fondo {
   background-image: url(../images/fondo.webp);
 }
 
 .no-webp .fondo {
   background-image: url(../images/fondo.jpg);
-}
-
-.fondo {
-  background-size: cover;
-  width: 100%;
-  opacity: 0.88;
 }
 
 /* Basic */
