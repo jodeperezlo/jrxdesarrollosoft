@@ -329,6 +329,7 @@ html {
   padding: 12px 20px;
   background-color: #fff;
   color: #1f437d;
+  border: 1.5px solid;
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -339,27 +340,28 @@ html {
 .white-button a:hover {
   background-color: #1f437d;
   color: #fff;
+  border: 1.5px solid;
 }
 
 button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 20px;
   background-color: #fff;
   color: #1f437d;
-  font-size: 12px;
+  border: 1.5px solid;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: all 0.5s;
-  border: none;
   outline: none;
   cursor: pointer;
 }
 
 button:hover {
-  outline: none;
   background-color: #1f437d;
   color: #fff;
+  border: 1.5px solid;
 }
 
 /* Left & Right Post */
@@ -790,6 +792,43 @@ section.contact-me {
 }
 .formulario__grupo-correcto .formulario__input {
   border: 0.2rem solid #468c46;
+}
+
+/* Botón regresar arriba */
+.ir-arriba {
+  display: none;
+  background: #d2eaf7;
+  font-size: 20px;
+  color: #1f437d;
+  padding: 15px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.2s;
+  width: 50px;
+  height: 50px;
+}
+
+.show {
+  display: inline-block;
+  z-index: 1010;
+  animation: popup 0.3s ease-in-out;
+}
+
+@keyframes popup {
+  0% {
+    width: 35px;
+    height: 35px;
+  }
+  50% {
+    width: 75px;
+    width: 75px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 1680px) {
